@@ -1,0 +1,4 @@
+name: pulumi-agnostic-lambda-typescript
+runtime: nodejs
+description: An example of a service agnostic Lambda that can be used with multiple
+  AWS Services
