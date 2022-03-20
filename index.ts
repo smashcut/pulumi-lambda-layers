@@ -4,30 +4,30 @@ import * as awsx from '@pulumi/awsx';
 
 const serviceName: string = 'PersonByChance';
 
+/**
+ * CREATE THE ROLE POLICY
+ *
+ * this policy could be created using getPolicyDocument, will revist this option later as
+ * this should be object vs string based.
+ *
+ * //TODO Revisit role policy creation by string, use getPolicyDocument if possible
+ */
 const iamForLambda: aws.iam.Role = new aws.iam.Role(
 	`iamFor${serviceName}Lambda`,
 	{
-		/**
-		 * CREATE THE ROLE POLICY
-		 *
-		 * this policy could be created using getPolicyDocument, will revist this option later as
-		 * this should be object vs string based.
-		 *
-		 * //TODO Revisit role policy creation by string, use getPolicyDocument if possible
-		 */
 		assumeRolePolicy: `{
-    "Version": "2012-10-17",
-    "Statement": [
-      {
-        "Action": "sts:AssumeRole",
-        "Principal": {
-          "Service": "lambda.amazonaws.com"
-        },
-        "Effect": "Allow",
-        "Sid": ""
-      }
-    ]
-  }`,
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Action": "sts:AssumeRole",
+          "Principal": {
+            "Service": "lambda.amazonaws.com"
+          },
+          "Effect": "Allow",
+          "Sid": ""
+        }
+      ]
+    }`,
 	}
 );
 
