@@ -6,6 +6,7 @@
 		"build:lambda": "webpack",
 		"prebuild:lambda": "npm run clean",
 		"up": "AWS_PROFILE=$npm_config_profile pulumi up",
+		"preup" : "npm run build:lambda",
 		"destroy": "AWS_PROFILE=$npm_config_profile pulumi destroy -y",
 		"archive": "ts-node archive",
 		"postarchive": "shx rm ./dist/*.js",
