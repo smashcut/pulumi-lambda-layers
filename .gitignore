@@ -1,5 +1,6 @@
 /bin/
 /dist/
+Pulumi.*.yaml
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/pulumi,node,visualstudiocode
