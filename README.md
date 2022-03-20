@@ -17,7 +17,7 @@ Before continuing, ensure you have met the following requirements:
 * an Environment Variable set for the Pulumi Config Passphrase (any of the following methods will work using a passphrase you choose)
     * **export PULUMI_CONFIG_PASSPHRASE=\<your passphrase\>** in ~/.zshrc
     * **export PULUMI_CONFIG_PASSPHRASE_FILE=\<location to file\>** in ~/.zshrc where the file contains the passphrase
-    * add one of the above environment variables inline to the beginning of the **up** and **destroy scripts**  
+    * add one of the above environment variables inline to the beginning of the **up** and **destroy** scripts 
 
 
 ## Installation
