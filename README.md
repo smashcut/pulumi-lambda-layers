@@ -14,13 +14,21 @@ Before continuing, ensure you have met the following requirements:
 * Pulumi should be installed [Pulumi Getting Started w/ AWS](https://www.pulumi.com/docs/get-started/aws/begin/)
 * an AWS profile configured in **~/.aws/config** and **~/.aws/credentials**
     * there are instructions to set up an Access Key Credential Type [here](https://cdkworkshop.com/15-prerequisites/200-account.html).
-* an Environment Variable set for the Pulumi Config Passphrase
-    ex. PULUMI_CONFIG_PASSPHRASE=0123456789
+* an Environment Variable set for the Pulumi Config Passphrase (any of the following methods will work using a passphrase you choose)
+    * **export PULUMI_CONFIG_PASSPHRASE=\<your passphrase\>** in ~/.zshrc
+    * **export PULUMI_CONFIG_PASSPHRASE_FILE=\<location to file\>** in ~/.zshrc where the file contains the passphrase
+    * add one of the above environment variables inline to the beginning of the **up** and **destroy scripts**  
+
 
 ## Installation
 
 * clone this repository into a directory of your choosing
-* run **npm install** in that directory 
+* run **npm install** in that directory
+
+## Pre-Deployment
+
+* create a stack running the following command **pulumi stack init \<your stack name\>**
+* choose the region to deploy to using the following command **pulumi config set aws:region \<your aws region\>**
 
 ## Deployment
 
