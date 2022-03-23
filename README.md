@@ -87,7 +87,7 @@ This project does not use the standard environment in code solution seen often a
 
 ## Notes
 * This example uses npm scripts in lieu of proper a proper CICD pipeline to aid with illustration via simple commands
-    * Ideally, each individual script may added as tasks in sequence in a CICD pipeline
+    * Ideally, each individual script may be added as tasks in sequence in a CICD pipeline
 * This repository is heavily commented to provide context as to what and why, if in VS Code feel free to collapse all comments if they are obtrusive
     * On Mac -> Press <kbd>&#8984;</kbd> + <kbd>K</kbd> then <kbd>&#8984;</kbd> + <kbd>/</kbd> 
     * On Windows & Linux -> Press <kbd>Ctrl</kbd> + <kbd>K</kbd> then <kbd>Ctrl</kbd> + <kbd>/</kbd> 
