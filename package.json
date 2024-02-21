@@ -2,7 +2,7 @@
   "name": "pulumi-agnostic-lambda-typescript",
   "license": "MIT",
   "scripts": {
-    "build": "esbuild --bundle --platform=node --format=esm --target=node14 --outdir=dist src/lambda/index.mts"
+    "build": "esbuild --bundle --platform=node --format=esm --target=node14 --outfile=dist/index.mjs src/lambda/index.mts"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.134",
