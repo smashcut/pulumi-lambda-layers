@@ -30,6 +30,7 @@ const basicExecution = new aws.iam.RolePolicyAttachment("basic-execution", {
 
 const repo = new aws.ecr.Repository("repo", {
   name: "custom-lambda-container",
+  forceDelete: true,
 });
 
 const image = new awsx.ecr.Image("image", {
